@@ -1,0 +1,10 @@
+Node.js with Angular 16, SCSS, Standalone, Angular CLI starter
+
+
+npm install –g @angular/cli
+
+
+ng new app-name --style=scss --standalone
+
+
+
