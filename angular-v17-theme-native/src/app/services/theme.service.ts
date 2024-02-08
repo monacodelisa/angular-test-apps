@@ -10,7 +10,7 @@ export class ThemeService {
 		this.themeSignal.set(theme);
 	}
 
-	toggleTheme() {
+	updateTheme() {
 		this.themeSignal.update((value) => (value === "dark" ? "light" : "dark"));
 	}
 }

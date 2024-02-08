@@ -12,6 +12,6 @@ export class HeaderComponent {
   themeService: ThemeService = inject(ThemeService);
 
   toggleTheme() {
-    this.themeService.toggleTheme();
+    this.themeService.updateTheme();
   }
 }
