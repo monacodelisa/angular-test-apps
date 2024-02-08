@@ -10,6 +10,7 @@ import { ThemeService } from '../../services/theme.service';
 })
 export class HeaderComponent {
   themeService: ThemeService = inject(ThemeService);
+  theme = this.themeService.themeSignal();
 
   toggleTheme() {
     this.themeService.updateTheme();
