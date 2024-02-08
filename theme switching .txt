@@ -27,6 +27,7 @@ Create a theme service adjust for signals
 
 Step 5: 
 Use [ngClass] with themeSignal() in app.component (in header can be set to variablr 'theme' but in app component must remain themeSignal())
+inject service in app component
 
 Step 6: 
 in the header - add google material icons, conditional rendering of moon or sun icon, in a button with the (click) event
@@ -36,7 +37,7 @@ Test
 
 ____________________________________________________________________________________________________________________
 
-OPTION 2 Angular with Angular Material UI (try sygnals)
+OPTION 2 Angular with SIGNALS & Angular Material UI 
 
 pros 
 - you can use predefined global styles
@@ -64,8 +65,9 @@ Step 6:
 Create a theme service -> adjust signals maybe?
 
 Step 7: 
-use JS to add conditional classes to the body native HTML element OR
-try the [ngClass] way maybe too ? 
+Use [ngClass] with themeSignal() in app.component (in header can be set to variablr 'theme' but in app component must remain themeSignal())
+inject service in app component
+
 
 Step 8: 
 in the header - 
@@ -74,10 +76,6 @@ in the header -
 
 Step 9: 
 Test
-
-signals try 
-
-
 
 
 ____________________________________________________________________________________________________________________
