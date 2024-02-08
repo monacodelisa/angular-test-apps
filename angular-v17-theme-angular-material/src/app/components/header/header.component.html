@@ -4,10 +4,16 @@
   </button>
   <span>My App</span>
   <div class="theme-control">
-    <mat-slide-toggle checked color="primary"></mat-slide-toggle>
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-      <mat-icon>bedtime</mat-icon>
-    </button>
+    <mat-slide-toggle checked color="primary" (click)="toggleTheme()"></mat-slide-toggle>
+    @if (theme === "dark") {
+      <button mat-icon-button>
+        <mat-icon>bedtime</mat-icon>
+      </button>
+    } @else {
+      <button mat-icon-button>
+        <mat-icon>brightness_5</mat-icon>
+      </button>
+    }
   </div>
 </mat-toolbar>
 

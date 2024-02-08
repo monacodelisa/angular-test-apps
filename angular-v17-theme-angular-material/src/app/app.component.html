@@ -1,4 +1,6 @@
-<div class="dark">
-<app-header></app-header>
-<h1>Hello World!</h1>
+<div [ngClass]="themeService.themeSignal()">
+  <app-header></app-header>
+  <div class="content">
+    <h1>Hello World!</h1>
+  </div>
 </div>
