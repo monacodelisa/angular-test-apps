@@ -1,8 +1,118 @@
-native 
+Angular v17 Dynamic Theme Switching 3 options
+____________________________________________________________________________________________________________________
+
+OPTION 1 Angular native with SIGNALS - no UI lib 
 
 pros 
-- you can customize everything
+- you can customize everything (google material icons)
+- can use signals
+
+cons
+- defining your own styles can be time consuming
+
+
+(setup another repo to be public and contain all the 3 versions projects)
+
+Step 1: 
+Create an angular v17 app 
+
+Step 2:
+Create a header component
+
+Step 3: 
+Define your custom .dark & .light styles in styles.scss (all coloring in it, specific for componentin the component .scss)
+
+Step 4:
+Create a theme service adjust for signals
+
+Step 5: 
+Use [ngClass] with themeSignal() in app.component (in header can be set to variablr 'theme' but in app component must remain themeSignal())
+
+Step 6: 
+in the header - add google material icons, conditional rendering of moon or sun icon, in a button with the (click) event
+
+Step 7: 
+Test
+
+____________________________________________________________________________________________________________________
+
+OPTION 2 Angular with Angular Material UI
+
+pros 
+- you can use predefined global styles
 
 cons
 
-- defining your own styles can be time consuming
+
+Step 1: 
+Create an angular v17 app 
+
+Step 2:
+Create a header component
+
+Step 3:
+npm install angular material
+
+Step 4: 
+add theme.scss with angular material predefined variables, add it to angular.json too
+
+Step 5:
+Create a theme service adjust behaviourSubject maybe?
+
+Step 6: 
+use JS to add conditional classes to the body native HTML element OR
+try the [ngClass] way maybe too ? 
+
+Step 7: 
+in the header 
+- mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event
+
+Step 8: 
+Test
+
+
+____________________________________________________________________________________________________________________
+
+OPTION 3 Angular with PrimeNG
+
+pros 
+- you can use predefined global styles
+
+cons
+- a bit more setting up - angular.json, seperating .scss, building the app
+
+
+Step 1: 
+Create an angular v17 app 
+
+Step 2:
+Create a header component
+
+Step 3:
+npm install primeng, primeicons
+
+Step 4:
+add the chosen primeng themes in angular.json with shown syntax, import each theme in a seperate .scss file 
+
+
+Step 5:
+add link in the index.html with id="app-theme" 
+
+Step 6:
+Create a theme service (adjust behaviourSubject maybe)
+- theme service changes the href attribute of the id="app-theme" element to the current theme
+
+Step 7: 
+in the header 
+- prime icons, conditional rendering of moon or sun icon, both sides of input switch with the (click) event
+
+Step 8: 
+ng build to generate the correct .CSS files
+
+Step 9: 
+Test
+
+
+
+
+
