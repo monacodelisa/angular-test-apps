@@ -61,14 +61,16 @@ Erase contents of app cpmponent, wrapper div with dark class for now, import hea
 npm i and start the app
 
 Step 6:
-Create a theme service adjust behaviourSubject maybe?
+Create a theme service -> adjust signals maybe?
 
 Step 7: 
 use JS to add conditional classes to the body native HTML element OR
 try the [ngClass] way maybe too ? 
 
 Step 8: 
-in the header - mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event, styling
+in the header - 
+- inject theme service, define toggle function
+- mat-icons icons, conditional rendering of moon or sun icon, both sides of slide toggle with the (click) event, styling
 
 Step 9: 
 Test
