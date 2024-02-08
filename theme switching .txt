@@ -51,7 +51,7 @@ Step 2:
 npm install angular material, select theme
 
 Step 3: 
-add theme.scss (or just copy to style.scss ?)  with angular material predefined variables, add it to angular.json too
+add theme.scss with angular material predefined variables, add it to angular.json too
 
 Step 4:
 Create a header component, use mat-toolbar + releted imports in header
@@ -68,7 +68,7 @@ use JS to add conditional classes to the body native HTML element OR
 try the [ngClass] way maybe too ? 
 
 Step 8: 
-in the header - mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event
+in the header - mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event, styling
 
 Step 9: 
 Test
