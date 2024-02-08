@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { ToolbarModule } from 'primeng/toolbar';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +14,19 @@ import { InputSwitchModule } from 'primeng/inputswitch';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   checked: boolean = true;
+  selectedTheme: string = 'dark';
+  themeService: ThemeService = inject(ThemeService);
 
+  ngOnInit(): void {
+    // Initialize theme based on persistence or user preference
+    this.themeService.setTheme(this.selectedTheme);
+  }
+
+  onThemeChange(theme: string): void {
+    this.selectedTheme = theme;
+    this.themeService.setTheme(theme);
+    console.log(theme);
+  }
 }

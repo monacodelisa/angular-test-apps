@@ -9,7 +9,7 @@
       </span>
   </div>
   <div class="p-toolbar-group-end">
-    <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
+    <p-inputSwitch [(ngModel)]="checked" (click)="onThemeChange(checked ? 'dark' : 'light')"></p-inputSwitch>
   </div>
 </p-toolbar>
 
