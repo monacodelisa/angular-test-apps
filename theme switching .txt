@@ -1,0 +1,8 @@
+native 
+
+pros 
+- you can customize everything
+
+cons
+
+- defining your own styles can be time consuming
