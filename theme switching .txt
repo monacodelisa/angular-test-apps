@@ -17,7 +17,7 @@ Step 1:
 Create an angular v17 app 
 
 Step 2:
-Create a header component
+Create a header component, erase contents of app cpmponent, wrapper div with dark class for now, import header, add some text below header
 
 Step 3: 
 Define your custom .dark & .light styles in styles.scss (all coloring in it, specific for componentin the component .scss)
@@ -36,7 +36,7 @@ Test
 
 ____________________________________________________________________________________________________________________
 
-OPTION 2 Angular with Angular Material UI
+OPTION 2 Angular with Angular Material UI (try sygnals)
 
 pros 
 - you can use predefined global styles
@@ -45,30 +45,37 @@ cons
 
 
 Step 1: 
-Create an angular v17 app 
+Create an angular v17 app
 
 Step 2:
-Create a header component
+npm install angular material, select theme
 
-Step 3:
-npm install angular material
+Step 3: 
+add theme.scss (or just copy to style.scss ?)  with angular material predefined variables, add it to angular.json too
 
-Step 4: 
-add theme.scss with angular material predefined variables, add it to angular.json too
+Step 4:
+Create a header component, use mat-toolbar + releted imports in header
 
 Step 5:
+Erase contents of app cpmponent, wrapper div with dark class for now, import header, add some text below header
+npm i and start the app
+
+Step 6:
 Create a theme service adjust behaviourSubject maybe?
 
-Step 6: 
+Step 7: 
 use JS to add conditional classes to the body native HTML element OR
 try the [ngClass] way maybe too ? 
 
-Step 7: 
-in the header 
-- mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event
-
 Step 8: 
+in the header - mat-icons icons, conditional rendering of moon or sun icon, both sides of mat-toggle switch with the (click) event
+
+Step 9: 
 Test
+
+signals try 
+
+
 
 
 ____________________________________________________________________________________________________________________
@@ -86,30 +93,31 @@ Step 1:
 Create an angular v17 app 
 
 Step 2:
-Create a header component
-
-Step 3:
 npm install primeng, primeicons
 
-Step 4:
-add the chosen primeng themes in angular.json with shown syntax, import each theme in a seperate .scss file 
+Step 3:
+Create a header component, use p-toolbar + releted imports in header
 
+Step 4:
+Erase contents of app cpmponent, wrapper div with dark class for now, import header, add some text below header
+npm i and start the app
 
 Step 5:
-add link in the index.html with id="app-theme" 
+add the chosen primeng themes in angular.json with shown syntax, import each theme in a seperate .scss file 
 
 Step 6:
-Create a theme service (adjust behaviourSubject maybe)
-- theme service changes the href attribute of the id="app-theme" element to the current theme
+add link in the index.html with id="app-theme" 
 
-Step 7: 
-in the header 
-- prime icons, conditional rendering of moon or sun icon, both sides of input switch with the (click) event
+Step 7:
+Create a theme service - theme service changes the href attribute of the id="app-theme" element to the current theme
 
 Step 8: 
-ng build to generate the correct .CSS files
+in the header - prime icons, conditional rendering of moon or sun icon, both sides of input switch with the (click) event
 
 Step 9: 
+ng build to generate the correct .CSS files
+
+Step 10: 
 Test
 
 
