@@ -41,6 +41,7 @@
                 "bundleName": "light",
                 "inject": false
               },
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
