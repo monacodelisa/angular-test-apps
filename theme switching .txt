@@ -26,7 +26,7 @@ Step 4:
 Create a theme service adjust for signals
 
 Step 5: 
-Use [ngClass] with themeSignal() in app.component (in header can be set to variablr 'theme' but in app component must remain themeSignal())
+Use [ngClass] with themeSignal() in app.component 
 inject service in app component
 
 Step 6: 
@@ -40,7 +40,8 @@ ________________________________________________________________________________
 OPTION 2 Angular with SIGNALS & Angular Material UI 
 
 pros 
-- you can use predefined global styles
+- you can use predefined global styles provided by angular material 
+- can use signals 
 
 cons
 
@@ -52,7 +53,7 @@ Step 2:
 npm install angular material, select theme
 
 Step 3: 
-add theme.scss with angular material predefined variables, add it to angular.json too
+add theme.scss with angular material predefined variables [it can work using it in styles.scss so that @use is above all other code] the angular material way is to add extra file), add it to angular.json too
 
 Step 4:
 Create a header component, use mat-toolbar + releted imports in header
@@ -62,10 +63,10 @@ Erase contents of app cpmponent, wrapper div with dark class for now, import hea
 npm i and start the app
 
 Step 6:
-Create a theme service -> adjust signals maybe?
+Create a theme service -> signals 
 
 Step 7: 
-Use [ngClass] with themeSignal() in app.component (in header can be set to variablr 'theme' but in app component must remain themeSignal())
+Use [ngClass] with themeSignal() in app.component 
 inject service in app component
 
 
@@ -77,17 +78,18 @@ in the header -
 Step 9: 
 Test
 
+[new sintax instead ngClass]
 
 ____________________________________________________________________________________________________________________
 
 OPTION 3 Angular with PrimeNG
 
 pros 
-- you can use predefined global styles
+- you can use predefined global styles provided by primeng
 
 cons
 - a bit more setting up - angular.json, seperating .scss, building the app
-
+- not going to be using signals
 
 Step 1: 
 Create an angular v17 app 
@@ -96,14 +98,14 @@ Step 2:
 npm install primeng, primeicons
 
 Step 3:
-Create a header component, use p-toolbar + releted imports in header
+add the chosen primeng themes in angular.json with shown syntax, import each theme in a seperate .scss file 
 
 Step 4:
-Erase contents of app cpmponent, wrapper div with dark class for now, import header, add some text below header
-npm i and start the app
+Create a header component, use p-toolbar + releted imports in header
 
 Step 5:
-add the chosen primeng themes in angular.json with shown syntax, import each theme in a seperate .scss file 
+Erase contents of app cpmponent, wrapper div with dark class for now, import header, add some text below header
+npm i and start the app
 
 Step 6:
 add link in the index.html with id="app-theme" 
@@ -112,7 +114,7 @@ Step 7:
 Create a theme service - theme service changes the href attribute of the id="app-theme" element to the current theme
 
 Step 8: 
-in the header - prime icons, conditional rendering of moon or sun icon, both sides of input switch with the (click) event
+in the header - prime input switch, (click) event
 
 Step 9: 
 ng build to generate the correct .CSS files
